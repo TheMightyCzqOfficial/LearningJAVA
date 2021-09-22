@@ -1,0 +1,2 @@
+对象序列化流 SerialVersionUID（序列化id值）定义对象类的版本号，可使类修改后依然能够序列化
+private transient object xx=123定义变量可使其不参与序列化

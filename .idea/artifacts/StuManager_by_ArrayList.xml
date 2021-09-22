@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StuManager by ArrayList">
+    <output-path>$PROJECT_DIR$/out/artifacts/StuManager_by_ArrayList</output-path>
+    <root id="archive" name="first project.jar">
+      <element id="module-output" name="first project" />
+    </root>
+  </artifact>
+</component>
