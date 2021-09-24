@@ -2,22 +2,13 @@ package Lambda;
 
 public class Demo {
     public static void main(String[] args) {
-        EatableImpl eat=new EatableImpl();
-        eat.eat();
 
-        useEatable(new Eatable() {
-            @Override
-            public void eat() {
-                System.out.println("eat");
-            }
-        });
+        useEatable(a-> System.out.println(a));
 
-        useEatable(()-> {
-            System.out.println("chichichi");
-        });
+        useEatable(System.out::println);
 
     }
     public static void useEatable(Eatable e){
-        e.eat();
+        e.eat("S");
     }
 }
