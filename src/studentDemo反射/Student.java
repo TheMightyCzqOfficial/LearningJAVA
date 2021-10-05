@@ -1,4 +1,4 @@
-package studentDemo;
+package studentDemo反射;
 
 public class Student {
     private String name;
@@ -53,6 +53,14 @@ public class Student {
 
     public void study() {
         System.out.println("学习");
+    }
+    public String caishu(String s,int i,double d) {
+        System.out.println(s+i+d);
+        return s+i+d;
+    }
+    private void study1(int i) {
+
+        System.out.println("学习 private 第"+i+"天");
     }
 
     @Override
