@@ -1,4 +1,4 @@
-package Study;
+package loginDemo;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
@@ -29,14 +29,18 @@ public class checkCodeServlet extends HttpServlet {
         //生成字符
         String str="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         Random ran=new Random();
+        StringBuilder sb=new StringBuilder();
         for (int i = 1; i <=4; i++) {
             int index = ran.nextInt(str.length());
             char c = str.charAt(index);
+            sb.append(c);
             g.drawString(String.valueOf(c),width/5*i,height/2);
         }
+        String code = sb.toString();
+        request.getSession().setAttribute("check_code",code);
         //画干扰线
         g.setColor(Color.green);
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 10; i++) {
             g.drawLine(ran.nextInt(width), ran.nextInt(height),ran.nextInt(width), ran.nextInt(height));
         }
 

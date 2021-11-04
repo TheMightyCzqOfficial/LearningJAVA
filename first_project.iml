@@ -7,9 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/out" type="java-resource" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="library" exported="" name="libs" level="project" />
     <orderEntry type="library" name="libs  (2)" level="project" />
     <orderEntry type="library" name="libs (3)" level="project" />
   </component>
