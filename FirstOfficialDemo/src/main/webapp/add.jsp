@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- HTML5文档-->
 <!DOCTYPE html>
 <!-- 网页使用的语言 -->
@@ -70,8 +71,8 @@
 
         <div class="form-group" style="text-align: center">
             <input class="btn btn-primary" type="submit" value="提交" />
-            <input class="btn btn-default" type="reset" value="重置" />
-            <input class="btn btn-default" type="button" value="返回" />
+            <a class="btn btn-default"  href="${pageContext.request.contextPath}/add.jsp">重置</a>
+            <a class="btn btn-default"  href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=1">返回</a>
         </div>
     </form>
 </div>

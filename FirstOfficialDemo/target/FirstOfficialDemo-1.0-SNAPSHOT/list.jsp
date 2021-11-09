@@ -33,22 +33,7 @@
             text-align: center;
         }
     </style>
-    <script>
-        function deleteUser(id,name){
-            if (confirm("您确定要删除"+name+"吗？"))
-                location.href="${pageContext.request.contextPath}/deleteServlet?id="+id;
-        }
-        function deleteUserByCheckbox(){
-            var id=document.getElementById("checked");
-            if (confirm("您确定要删除"+id.name+"吗？"))
-                location.href="${pageContext.request.contextPath}/deleteServlet?id="+id.value;
-        }
-        var all=document.getElementById("selectAll");
-        all.onclick=function () {
-            var cbox = document.getElementById("checked");
-            cbox.checked=true;
-
-        }
+    <script type="text/javascript" src="list.js">
 
     </script>
 </head>
@@ -60,26 +45,38 @@
 
     <h3 style="text-align: center">用户信息列表</h3>
     <div style="float: left;margin: 5px">
-        <form class="form-inline">
+        <form class="form-inline" action="${pageContext.request.contextPath}/findUserByPageServlet" method="get">
             <div class="form-group">
-                <label for="exampleInputName2">名字</label>
-                <input type="text" class="form-control" id="exampleInputName2" >
+                <label >名字</label>
+                <input type="text" class="form-control" name="name" >
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail2">年龄</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" >
+                <label >年龄</label>
+                <input type="text" class="form-control"  name="age">
+            </div>
+            <div class="form-group">
+                <label >籍贯</label>
+                <input type="text" class="form-control"  name="address">
             </div>
             <button type="submit" class="btn btn-default">查询</button>
+            <c:if test="${param.keySet().contains(\"address\")}">
+                <a  class="btn btn-default" href="${pageContext.request.contextPath}/findUserByPageServlet">退出查询</a>
+            </c:if>
         </form>
     </div>
+
     <div style="float: right;margin: 5px">
 
         <a class="btn btn-primary" href="add.jsp">添加联系人</a>
-        <a class="btn btn-primary" href="javascript:deleteUserByCheckbox()">删除选中</a>
+        <a class="btn btn-primary" href="javascript:void(0);" onclick="deleteAll()">删除选中</a>
     </div>
+    <form action="${pageContext.request.contextPath}/deleteAllServlet" id="selectUser" method="post">
     <table border="1" class="table table-bordered table-hover">
         <tr class="success">
-            <th><input type="checkbox" id="selectAll"></th>
+            <th>
+                <a class="btn btn-primary" onclick="selectAll()" >全选</a>
+                <a class="btn btn-primary" onclick="isSelect()" >反选</a>
+            </th>
             <th>编号</th>
             <th>姓名</th>
             <th>性别</th>
@@ -89,9 +86,10 @@
             <th>邮箱</th>
             <th>操作</th>
         </tr>
-       <c:forEach items="${users}" var="user" varStatus="s">
+
+       <c:forEach items="${pageBean.list}" var="user" varStatus="s">
         <tr>
-            <td><input type="checkbox" id="checked" name="${user.name}" value="${user.id}"></td>
+            <td><input type="checkbox" name="uid" id="${user.name}" value="${user.id}"></td>
             <td>${s.count}</td>
             <td>${user.name}</td>
             <td>${user.gender}</td>
@@ -104,25 +102,98 @@
        </c:forEach>
 
     </table>
+    </form>
+
     <nav aria-label="Page navigation">
         <ul class="pagination">
-            <li>
-                <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
+            <!--控制页面带参数与不带参数使用两个if判断其param是否含有参数
+            forEach控制分页 也需要判断其带与不带参数
+            -->
+            <c:if test="${pageBean.totalPage==0}"><!--通过总页面判断页面是否为最后一页与第一页对向前向后按钮添加disable属性-->
+                <li class="disabled" >
+                    <span aria-hidden="true" hidden>&laquo;</span>
+                </li>
+            </c:if>
+            <c:if test="${pageBean.currentPage==1&&pageBean.totalPage!=0}">
+            <li class="disabled" >
+                <span aria-hidden="true" >&laquo;</span>
             </li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li>
-                <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
+                </c:if>
+                <c:if test="${pageBean.currentPage!=1}">
+                    <c:if test="${!param.keySet().contains(\"address\")}"><!--判断是否带参-->
+                    <li>
+                        <a  href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pageBean.currentPage-1}" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    </c:if>
+                    <c:if test="${param.keySet().contains(\"address\")}">
+                        <li>
+                            <a  href="${pageContext.request.contextPath}/findUserByPageServlet?${url}currentPage=${pageBean.currentPage-1}" aria-label="Next">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    </c:if>
+                </c:if>
+
+
+            <c:if test="${param.keySet().contains(\"address\")}">
+                <c:forEach  begin="1" end="${pageBean.totalPage}"  var="i" >
+
+                    <c:if test="${pageBean.currentPage==i}"><!--在servlet内设置会话拼接传参URL，并接收参数-->
+                        <li class="active"><a href="${pageContext.request.contextPath}/findUserByPageServlet?${url}currentPage=${i}">${i}</a></li>
+                    </c:if>
+                    <c:if test="${pageBean.currentPage!=i}">
+                        <li ><a href="${pageContext.request.contextPath}/findUserByPageServlet?${url}currentPage=${i}">${i}</a></li>
+                    </c:if>
+
+                </c:forEach>
+            </c:if>
+            <c:if test="${!param.keySet().contains(\"address\")}">
+            <c:forEach  begin="1" end="${pageBean.totalPage}"  var="i" >
+
+                    <c:if test="${pageBean.currentPage==i}">
+                        <li class="active"><a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${i}">${i}</a></li>
+                    </c:if>
+                    <c:if test="${pageBean.currentPage!=i}">
+                        <li ><a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${i}">${i}</a></li>
+                    </c:if>
+
+            </c:forEach>
+            </c:if>
+            <c:if test="${pageBean.totalPage==0}">
+                <li class="disabled" >
+                    <span aria-hidden="true" hidden>&raquo;</span>
+                </li>
+            </c:if>
+            <c:if test="${pageBean.currentPage==pageBean.totalPage}">
+                    <li class="disabled" >
+                    <span aria-hidden="true" >&raquo;</span>
+                    </li>
+            </c:if>
+
+            <c:if test="${pageBean.currentPage!=pageBean.totalPage&&pageBean.totalPage!=0}">
+                <c:if test="${!param.keySet().contains(\"address\")}">
+                <li>
+                    <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pageBean.currentPage+1}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+                </c:if>
+                <c:if test="${param.keySet().contains(\"address\")}">
+                    <li>
+                        <a href="${pageContext.request.contextPath}/findUserByPageServlet?${url}currentPage=${pageBean.currentPage+1}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </c:if>
+            </c:if>
         </ul>
     </nav>
+    <span style="font-size: 25px ;margin-left: 5px ">
+        一共有${pageBean.totalCount}条数据,共${pageBean.totalPage}页
+    </span>
 </div>
+<h1 hidden>${pageContext.request.getAttribute("javax.servlet.forward.request_uri")}</h1>
 </body>
 </html>

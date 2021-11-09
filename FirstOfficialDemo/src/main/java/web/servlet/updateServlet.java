@@ -33,6 +33,6 @@ public class updateServlet extends HttpServlet {
         }
         UserService service=new UserServiceImpl();
         service.update(user);
-        response.sendRedirect(request.getContextPath()+"/userListServlet");
+        response.sendRedirect(request.getContextPath()+"/findUserByPageServlet?currentPage=1");
     }
 }

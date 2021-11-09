@@ -9,6 +9,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import util.JDBCUtils;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class UserDaoImpl implements UserDao {
     private JdbcTemplate template=new JdbcTemplate(JDBCUtils.getDatasource());
@@ -65,5 +67,52 @@ public class UserDaoImpl implements UserDao {
         String sql="select * from user where id=?";
         return template.queryForObject(sql,new BeanPropertyRowMapper<User>(User.class),id);
     }
+
+    @Override
+    public void deleteAll(String[] id) {
+        for (String uid:id){
+            int intid=Integer.parseInt(uid);
+            deleteUserById(intid);
+        }
+    }
+
+    @Override
+    public List<User> findByPage(int start, int row, Map<String, String[]> condition) {
+        String sql="select * from user where 1=1 ";
+        StringBuilder sb=new StringBuilder(sql);
+        Set<String> keySet = condition.keySet();
+        for (String key:keySet){
+            if (key.equals("currentPage")){
+                continue;
+            }
+            String value = condition.get(key)[0];
+            sb.append("and "+key+" like \"%"+value+"%\"");
+        }
+        sb.append(" limit ?,?");
+        List<User> userList = template.query(sb.toString(), new BeanPropertyRowMapper<>(User.class),start, row);
+        return userList;
+    }
+
+    @Override
+    public int findTotalCount(Map<String, String[]> condition) {
+        String sql="select count(*) from user where 1=1 ";
+        StringBuilder sb=new StringBuilder(sql);
+        Set<String> keySet = null;
+
+            keySet = condition.keySet();
+
+        for (String key:keySet){
+            if (key.equals("currentPage")){
+                continue;
+            }
+            String value = condition.get(key)[0];
+            sb.append("and "+key+" like \"%"+value+"%\"");
+        }
+
+        Map<String, Object> map = template.queryForMap(sb.toString());
+        Number count= (Number) map.get("count(*)");
+        return count.intValue();
+    }
+
 
 }

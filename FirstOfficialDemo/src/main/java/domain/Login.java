@@ -1,5 +1,7 @@
 package domain;
-
+/*
+登录类
+ */
 public class Login {
     private String user;
     private String password;
