@@ -1,5 +1,6 @@
 package web.servlet;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import domain.Login;
 import org.apache.commons.beanutils.BeanUtils;
 import service.UserService;
@@ -13,15 +14,31 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 @WebServlet(name = "registerServlet", value = "/registerServlet")
 public class registerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        UserService service=new UserServiceImpl();
+        String username = request.getParameter("user");
+        List<Login> register = service.findRegister(username);
+        Map<String,Object> map=new HashMap<String,Object>();
 
+        response.setContentType("text/html;charset=utf-8");
+        if ((register.toString()).equals("[]")){//用户不存在
+            map.put("userExist",false);
+            map.put("msg","用户名可用");
+        }
+        else {
+            map.put("userExist",true);
+            map.put("msg","您的用户名已存在！");
+        }
+        ObjectMapper objectMapper=new ObjectMapper();
+        objectMapper.writeValue(response.getWriter(),map);
+        //response.sendRedirect("/register.jsp");
     }
 
     @Override

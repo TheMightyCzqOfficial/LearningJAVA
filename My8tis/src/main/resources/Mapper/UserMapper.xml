@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper为映射的根节点，namespace指定Dao接口的完整类名
+mybatis会依据这个接口动态创建一个实现类去实现这个接口，
+而这个实现类是一个Mapper对象-->
+
+
+
+
+<mapper namespace="dao.UserMapper">
+    
+    <resultMap id="userMap" type="domin.User">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="password" property="password"></result>
+        <collection property="studentList" ofType="domin.Account">
+            <id column="aid" property="aid"></id>
+            <id column="sid" property="sid"></id>
+            <result column="sname" property="sname"></result>
+            <result column="money" property="money"></result>
+        </collection>
+    </resultMap>
+
+    <select id="findAll"  resultMap="userMap">
+        SELECT * FROM users u,account a WHERE u.id=a.sid
+    </select>
+    <insert id="add" parameterType="domin.User">
+        insert into users(id,username,password) value (#{id},#{username},#{username})
+    </insert>
+    <delete id="delete" parameterType="int">
+        delete from users where id=#{id}
+    </delete>
+</mapper>

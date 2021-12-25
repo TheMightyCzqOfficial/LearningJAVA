@@ -22,6 +22,38 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
     </script>
+    <script>
+        var reg = /^\w{3,8}$/;
+        var rreg_email=/^\w+@+\.\w$/
+        $(function () {
+            $("#user").blur(function () {
+
+                const username = $(this).val();
+                var flag = reg.test(username);
+                if (flag){
+                    $("#user").css("border","");
+                    $.get("registerServlet",{user:username},function (data) {
+                        if (data.userExist){
+                            $("#msg").css("color","red");
+                            $("#user").css("border","1px solid red");
+                            $("#msg").html(data.msg);
+                        }else {
+                            $("#msg").css("color","green");
+                            $("#user").css("border","");
+                            $("#msg").html(data.msg);
+                        }
+                    },"json")
+                }else {
+                    $("#msg").css("color","red");
+                    $("#user").css("border","1px solid red");
+                    $("#msg").html("请输入3-8位用户名");
+                }
+                //发送ajax请求，服务端返回数据{"userExist":true,"msg":"用户已存在"}{"userExist":false,"msg":"可以使用"}
+
+
+            })
+        })
+    </script>
 </head>
 <body>
 <div class="container" style="width: 400px;">
@@ -29,8 +61,8 @@
     <form action="${pageContext.request.contextPath}/registerServlet" method="post">
         <div class="form-group">
             <label for="user">用户名：</label>
-            <input type="text" name="user" class="form-control" id="user"  placeholder="请输入用户名"/>
-            <span>请输入3~8位用户名</span>
+            <input type="text" name="user" class="form-control" id="user"  placeholder="请输入3~8位用户名"/>
+            <span id="msg"></span>
         </div>
 
         <div class="form-group">

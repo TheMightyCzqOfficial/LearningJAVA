@@ -33,6 +33,7 @@ public class addUserServlet extends HttpServlet {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
+        System.out.println(user.toString());
         UserService service=new UserServiceImpl();
         service.addUser(user);
 

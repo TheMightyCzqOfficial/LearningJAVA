@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper为映射的根节点，namespace指定Dao接口的完整类名
+mybatis会依据这个接口动态创建一个实现类去实现这个接口，
+而这个实现类是一个Mapper对象-->
+<mapper namespace="dao.StockInfoMapper">
+    <select id="findAll" resultType="domain.StockInfo">
+        select DISTINCT * from stockinfo
+    </select>
+    <select id="findByCode" parameterType="String" resultType="domain.Data">
+        select DISTINCT `stockdata`.`code` AS `code`,`stockdata`.`trade_date` AS `trade_date`,`stockdata`.`open` AS `open`,`stockdata`.`high` AS `high`,`stockdata`.`low` AS `low`,`stockdata`.`close` AS `close`,`stockdata`.`pre_close` AS `pre_close`,`stockdata`.`change_amount` AS `change_amount`,`stockdata`.`pct_chg` AS `pct_chg`,`stockdata`.`vol` AS `vol`,`stockdata`.`amount` AS `amount` from `stockdata` where code=#{code}
+    </select>
+    <select id="findInfoByCode" parameterType="String" resultType="domain.StockInfo">
+        select DISTINCT * from stockinfo where code=#{code}
+    </select>
+
+    <select id="searchStock" parameterType="java.util.HashMap" resultType="domain.StockInfo">
+        select DISTINCT * from stockinfo where 1=1
+        <if test="_parameter.containsKey('code')">
+            and code like concat('%',#{code},'%')
+        </if>
+                                         <if test="_parameter.containsKey('name')">
+                                             and name like concat('%',#{name},'%')
+                                         </if>
+
+        
+    </select>
+</mapper>

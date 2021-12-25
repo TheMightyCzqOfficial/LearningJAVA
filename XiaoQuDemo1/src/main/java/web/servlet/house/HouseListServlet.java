@@ -3,9 +3,7 @@ package web.servlet.house;
 
 import domain.House;
 import service.HouseService;
-import service.UserService;
 import service.impl.HouseServiceImpl;
-import service.impl.UserServiceImpl;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

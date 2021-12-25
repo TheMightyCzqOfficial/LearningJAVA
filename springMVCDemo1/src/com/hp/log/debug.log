@@ -1,0 +1,546 @@
+2021-12-20 20:45:45 下午 [Thread: main][ Class:org.springframework.context.support.ClassPathXmlApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:594) ]
+DEBUG:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11531931
+2021-12-20 20:45:45 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 4 bean definitions from class path resource [spring-dao.xml]
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\service\impl\StockInfoServiceImpl.class]
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 8 bean definitions from class path resource [service.xml]
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\controller\stockInfoController.class]
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\service\impl\StockInfoServiceImpl.class]
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 18 bean definitions from class path resource [spring-mvc.xml]
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 30 bean definitions from class path resource [applicationContext.xml]
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.mybatis.spring.mapper.ClassPathMapperScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\dao\StockInfoMapper.class]
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.mybatis.spring.mapper.ClassPathMapperScanner >> Method: org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:164) ]
+DEBUG:Creating MapperFactoryBean with name 'stockInfoMapper' and 'dao.StockInfoMapper' mapperInterface
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.driverClassName' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'dataSource'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:124) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:101) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:137) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:101) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getInstance(VFS.java:68) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getInstance(VFS.java:80) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:197) ]
+DEBUG:Find JAR URL: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:217) ]
+DEBUG:Not a JAR: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:94) ]
+DEBUG:Reader entry: StockInfo.class
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:103) ]
+DEBUG:Listing file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:197) ]
+DEBUG:Find JAR URL: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain/StockInfo.class
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:217) ]
+DEBUG:Not a JAR: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain/StockInfo.class
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:94) ]
+DEBUG:Reader entry: ����   4 I
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:250) ]
+DEBUG:Checking to see if class domain.StockInfo matches criteria [is assignable to Object]
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionFactoryBean >> Method: org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:431) ]
+DEBUG:Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionFactoryBean >> Method: org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:477) ]
+DEBUG:Property 'mapperLocations' was not specified or no matching resources found
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'StockInfoService'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoServiceImpl'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoMapper'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'TransactionManager'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcCorsConfigurations'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.handlerMethodsInitialized(AbstractHandlerMethodMapping.java:350) ]
+DEBUG:1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter >> Method: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:616) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter >> Method: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:616) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver >> Method: org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:299) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.web.servlet.handler.SimpleUrlHandlerMapping >> Method: org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers(SimpleUrlHandlerMapping.java:139) ]
+DEBUG:Patterns [/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoController'
+2021-12-20 20:45:46 下午 [Thread: main][ Class:org.springframework.context.support.ClassPathXmlApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:557) ]
+WARN:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockInfoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'service.StockInfoService' available: expected single matching bean but found 2: StockInfoService,stockInfoServiceImpl
+2021-12-20 20:45:46 下午 [Thread: main][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:2032) ]
+INFO:{dataSource-0} closing ...
+2021-12-20 20:46:07 下午 [Thread: main][ Class:org.springframework.context.support.ClassPathXmlApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:594) ]
+DEBUG:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11531931
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 4 bean definitions from class path resource [spring-dao.xml]
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\service\impl\StockInfoServiceImpl.class]
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 8 bean definitions from class path resource [service.xml]
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\controller\stockInfoController.class]
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\service\impl\StockInfoServiceImpl.class]
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 18 bean definitions from class path resource [spring-mvc.xml]
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 30 bean definitions from class path resource [applicationContext.xml]
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.mybatis.spring.mapper.ClassPathMapperScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\dao\StockInfoMapper.class]
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.mybatis.spring.mapper.ClassPathMapperScanner >> Method: org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:164) ]
+DEBUG:Creating MapperFactoryBean with name 'stockInfoMapper' and 'dao.StockInfoMapper' mapperInterface
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.driverClassName' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'dataSource'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:124) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:101) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:137) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:101) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getInstance(VFS.java:68) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getInstance(VFS.java:80) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:197) ]
+DEBUG:Find JAR URL: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:217) ]
+DEBUG:Not a JAR: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:94) ]
+DEBUG:Reader entry: StockInfo.class
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:103) ]
+DEBUG:Listing file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:197) ]
+DEBUG:Find JAR URL: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain/StockInfo.class
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:217) ]
+DEBUG:Not a JAR: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain/StockInfo.class
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:94) ]
+DEBUG:Reader entry: ����   4 I
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:250) ]
+DEBUG:Checking to see if class domain.StockInfo matches criteria [is assignable to Object]
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionFactoryBean >> Method: org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:431) ]
+DEBUG:Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionFactoryBean >> Method: org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:477) ]
+DEBUG:Property 'mapperLocations' was not specified or no matching resources found
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'StockInfoService'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoServiceImpl'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoMapper'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'TransactionManager'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcCorsConfigurations'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.handlerMethodsInitialized(AbstractHandlerMethodMapping.java:350) ]
+DEBUG:1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter >> Method: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:616) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter >> Method: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:616) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver >> Method: org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:299) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.web.servlet.handler.SimpleUrlHandlerMapping >> Method: org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers(SimpleUrlHandlerMapping.java:139) ]
+DEBUG:Patterns [/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoController'
+2021-12-20 20:46:08 下午 [Thread: main][ Class:org.springframework.context.support.ClassPathXmlApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:557) ]
+WARN:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockInfoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'service.StockInfoService' available: expected single matching bean but found 2: StockInfoService,stockInfoServiceImpl
+2021-12-20 20:46:08 下午 [Thread: main][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:2032) ]
+INFO:{dataSource-0} closing ...
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.context.support.ClassPathXmlApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:594) ]
+DEBUG:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11531931
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 4 bean definitions from class path resource [spring-dao.xml]
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\service\impl\StockInfoServiceImpl.class]
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 8 bean definitions from class path resource [service.xml]
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\controller\stockInfoController.class]
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\service\impl\StockInfoServiceImpl.class]
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 18 bean definitions from class path resource [spring-mvc.xml]
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 30 bean definitions from class path resource [applicationContext.xml]
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.mybatis.spring.mapper.ClassPathMapperScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\dao\StockInfoMapper.class]
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.mybatis.spring.mapper.ClassPathMapperScanner >> Method: org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:164) ]
+DEBUG:Creating MapperFactoryBean with name 'stockInfoMapper' and 'dao.StockInfoMapper' mapperInterface
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.driverClassName' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'dataSource'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:124) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:101) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:137) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:101) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getInstance(VFS.java:68) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getInstance(VFS.java:80) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:197) ]
+DEBUG:Find JAR URL: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:217) ]
+DEBUG:Not a JAR: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:94) ]
+DEBUG:Reader entry: StockInfo.class
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:103) ]
+DEBUG:Listing file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:197) ]
+DEBUG:Find JAR URL: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain/StockInfo.class
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:217) ]
+DEBUG:Not a JAR: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain/StockInfo.class
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:94) ]
+DEBUG:Reader entry: ����   4 I
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:250) ]
+DEBUG:Checking to see if class domain.StockInfo matches criteria [is assignable to Object]
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionFactoryBean >> Method: org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:431) ]
+DEBUG:Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionFactoryBean >> Method: org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:477) ]
+DEBUG:Property 'mapperLocations' was not specified or no matching resources found
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'StockInfoService'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoServiceImpl'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoMapper'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'TransactionManager'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcCorsConfigurations'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2021-12-20 20:48:19 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.handlerMethodsInitialized(AbstractHandlerMethodMapping.java:350) ]
+DEBUG:1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter >> Method: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:616) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter >> Method: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:616) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver >> Method: org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:299) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.web.servlet.handler.SimpleUrlHandlerMapping >> Method: org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers(SimpleUrlHandlerMapping.java:139) ]
+DEBUG:Patterns [/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoController'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'internalResourceViewResolver'
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104) ]
+DEBUG:Creating a new SqlSession
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140) ]
+DEBUG:SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48d61b48] was not registered for synchronization because synchronization is not active
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.springframework.jdbc.datasource.DataSourceUtils >> Method: org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:114) ]
+DEBUG:Fetching JDBC Connection from DataSource
+2021-12-20 20:48:20 下午 [Thread: main][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:985) ]
+INFO:{dataSource-1} inited
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.mybatis.spring.transaction.SpringManagedTransaction >> Method: org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86) ]
+DEBUG:JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4f5991f6] will not be managed by Spring
+2021-12-20 20:48:20 下午 [Thread: main][ Class:dao.StockInfoMapper.findAll >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:132) ]
+DEBUG:ooo Using Connection [com.mysql.cj.jdbc.ConnectionImpl@4f5991f6]
+2021-12-20 20:48:20 下午 [Thread: main][ Class:dao.StockInfoMapper.findAll >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:132) ]
+DEBUG:==>  Preparing: select * from stockinfo 
+2021-12-20 20:48:20 下午 [Thread: main][ Class:dao.StockInfoMapper.findAll >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:132) ]
+DEBUG:==> Parameters: 
+2021-12-20 20:48:20 下午 [Thread: main][ Class:dao.StockInfoMapper.findAll >> Method: org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:132) ]
+DEBUG:<==      Total: 8
+2021-12-20 20:48:20 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionUtils >> Method: org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168) ]
+DEBUG:Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48d61b48]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.context.support.ClassPathXmlApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:594) ]
+DEBUG:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11531931
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 4 bean definitions from class path resource [spring-dao.xml]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\service\impl\StockInfoServiceImpl.class]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 8 bean definitions from class path resource [service.xml]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\controller\stockInfoController.class]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.context.annotation.ClassPathBeanDefinitionScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\service\impl\StockInfoServiceImpl.class]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 18 bean definitions from class path resource [spring-mvc.xml]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395) ]
+DEBUG:Loaded 30 bean definitions from class path resource [applicationContext.xml]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.mybatis.spring.mapper.ClassPathMapperScanner >> Method: org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437) ]
+DEBUG:Identified candidate component class: file [C:\Users\CZQ\IdeaProjects\LearningJAVA\springMVCDemo1\target\classes\dao\StockInfoMapper.class]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.mybatis.spring.mapper.ClassPathMapperScanner >> Method: org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:164) ]
+DEBUG:Creating MapperFactoryBean with name 'stockInfoMapper' and 'dao.StockInfoMapper' mapperInterface
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.driverClassName' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.core.env.PropertySourcesPropertyResolver >> Method: org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) ]
+DEBUG:Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'dataSource'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'sqlSessionFactory'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.logging.LogFactory >> Method: org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:124) ]
+DEBUG:Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:101) ]
+DEBUG:Class not found: org.jboss.vfs.VFS
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.JBoss6VFS.setInvalid(JBoss6VFS.java:137) ]
+DEBUG:JBoss 6 VFS API is not available in this environment.
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getClass(VFS.java:101) ]
+DEBUG:Class not found: org.jboss.vfs.VirtualFile
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getInstance(VFS.java:68) ]
+DEBUG:VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.VFS.getInstance(VFS.java:80) ]
+DEBUG:Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:197) ]
+DEBUG:Find JAR URL: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:217) ]
+DEBUG:Not a JAR: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:94) ]
+DEBUG:Reader entry: StockInfo.class
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:103) ]
+DEBUG:Listing file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:197) ]
+DEBUG:Find JAR URL: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain/StockInfo.class
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:217) ]
+DEBUG:Not a JAR: file:/C:/Users/CZQ/IdeaProjects/LearningJAVA/springMVCDemo1/target/classes/domain/StockInfo.class
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:94) ]
+DEBUG:Reader entry: ����   4 I
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.apache.ibatis.io.ResolverUtil >> Method: org.apache.ibatis.io.ResolverUtil.addIfMatching(ResolverUtil.java:250) ]
+DEBUG:Checking to see if class domain.StockInfo matches criteria [is assignable to Object]
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionFactoryBean >> Method: org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:431) ]
+DEBUG:Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.mybatis.spring.SqlSessionFactoryBean >> Method: org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:477) ]
+DEBUG:Property 'mapperLocations' was not specified or no matching resources found
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'StockInfoService'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoServiceImpl'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoMapper'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'TransactionManager'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcCorsConfigurations'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.handlerMethodsInitialized(AbstractHandlerMethodMapping.java:350) ]
+DEBUG:1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter >> Method: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:616) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter >> Method: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:616) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver >> Method: org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:299) ]
+DEBUG:ControllerAdvice beans: none
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.web.servlet.handler.SimpleUrlHandlerMapping >> Method: org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers(SimpleUrlHandlerMapping.java:139) ]
+DEBUG:Patterns [/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.beans.factory.support.DefaultListableBeanFactory >> Method: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213) ]
+DEBUG:Creating shared instance of singleton bean 'stockInfoController'
+2021-12-20 20:48:39 下午 [Thread: main][ Class:org.springframework.context.support.ClassPathXmlApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:557) ]
+WARN:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'stockInfoController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'service.StockInfoService' available: expected single matching bean but found 2: StockInfoService,stockInfoServiceImpl
+2021-12-20 20:48:39 下午 [Thread: main][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:2032) ]
+INFO:{dataSource-0} closing ...

@@ -57,8 +57,8 @@ public class loginTestDemo extends HttpServlet {
                     session.setAttribute("username",login.getUser());//通过“user”共享数据 两次请求使用session
                     response.sendRedirect(request.getContextPath()+"/main.jsp");
                 }else {
-                    session.setAttribute("username",login.getUser());//通过“user”共享数据 两次请求使用session
-                    response.sendRedirect(request.getContextPath()+"/userMain.jsp");
+                    //session.setAttribute("username",login.getUser());//通过“user”共享数据 两次请求使用session
+                    response.sendRedirect(request.getContextPath()+"/findUserServlet?user="+login.getUser());//验证是否激活
                 }
 
             }

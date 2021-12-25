@@ -2,21 +2,27 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/demo001" />
+    <file type="web" url="file://$PROJECT_DIR$/demo1" />
     <file type="web" url="file://$PROJECT_DIR$/demoJavaEE1" />
-    <file type="web" url="file://$PROJECT_DIR$/FirstOfficialDemo" />
     <file type="web" url="file://$PROJECT_DIR$/JEEdemo1" />
+    <file type="web" url="file://$PROJECT_DIR$/My8tis" />
+    <file type="web" url="file://$PROJECT_DIR$/springMVCDemo1" />
+    <file type="web" url="file://$PROJECT_DIR$/XiaoQuDemo1" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/demoJavaEE1/pom.xml" />
-        <option value="$PROJECT_DIR$/demo1/pom.xml" />
         <option value="$PROJECT_DIR$/demo001/pom.xml" />
         <option value="$PROJECT_DIR$/FirstOfficialDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/XiaoQuDemo1/pom.xml" />
+        <option value="$PROJECT_DIR$/My8tis/pom.xml" />
+        <option value="$PROJECT_DIR$/stockDemo1/pom.xml" />
+        <option value="$PROJECT_DIR$/springMVCDemo1/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

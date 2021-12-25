@@ -62,7 +62,13 @@
             <label for="house">住所：</label>
             <input type="text" class="form-control" id="house" name="house" placeholder="请输入住所">
         </div>
+        <div class="form-group">
+            <label >用户账号：</label>
+            <select class="form-control" name="type">
+                <option value ="ts">投诉</option>
 
+            </select>
+        </div>
 
 
         <div class="form-group" style="text-align: center">

@@ -148,8 +148,8 @@
             <th>手机号</th>
             <th>邮箱</th>
             <th>创建时间</th>
-
             <th>住宅</th>
+            <th>用户账号</th>
             <th>操作</th>
         </tr>
 
@@ -162,8 +162,8 @@
             <td>${user.mobil}</td>
             <td>${user.email}</td>
             <td>${user.create_time}</td>
-
             <td>${user.house}</td>
+            <td>${user.username}</td>
             <td><a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/findUserServlet?id=${user.id}">修改</a>&nbsp;<a class="btn btn-default btn-sm" href="javascript:deleteUser('${user.id}','${user.name}')">删除</a></td>
         </tr>
        </c:forEach>

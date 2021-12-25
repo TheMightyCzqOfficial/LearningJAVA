@@ -88,7 +88,35 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<Login> findRegister(String username) {
         JdbcTemplate template=new JdbcTemplate(JDBCUtils.getDatasource());
-        String sql="select * from login where user=?";
-        return template.query(sql,new BeanPropertyRowMapper<>(Login.class),username);
+        String sql="select user from login where user=?";
+        List<Login> query = template.query(sql, new BeanPropertyRowMapper<>(Login.class), username);
+        return query;
+    }
+
+    @Override
+    public List<String> findLogin() {
+        return dao.findLogin();
+    }
+
+    @Override
+    public void updatePwd(String username, String pwd) {
+        dao.updatePwd(username,pwd);
+    }
+
+    @Override
+    public String findActivateUser(String username) {
+        return dao.findActivateUser(username);
+    }
+    @Override
+    public List findUsername() {
+
+        return dao.finUsername();
+
+
+    }
+
+    @Override
+    public int findUnDo() {
+        return dao.findUnDo();
     }
 }

@@ -1,6 +1,5 @@
 package web.servlet.record;
 
-import dao.RecordDao;
 import dao.impl.RecordDaoImpl;
 import domain.Record;
 import service.RecordService;

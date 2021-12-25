@@ -22,7 +22,7 @@ public class welcomeServlet extends HttpServlet {
         request.setAttribute("count",count);
         request.setAttribute("RecordCount",count1);
         request.setAttribute("user",user);
-        request.getRequestDispatcher("/welcome.jsp").forward(request,response);
+        request.getRequestDispatcher("/CarServlet?action=user&user="+user).forward(request,response);
     }
 
     @Override

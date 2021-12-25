@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -35,6 +36,18 @@ public class findUserByPageServlet extends HttpServlet {
         //System.out.println(sb.toString());
         request.getSession().setAttribute("url",sb.toString());
         UserService service=new UserServiceImpl();
+        List<String> login = service.findLogin();
+        System.out.println(login.toString());
+        if (!login.toString().equals("[admin]")){
+            request.setAttribute("unDeal","系统当前有未激活账户，请前往添加用户写入账号！");
+        }
+        int unDo = service.findUnDo();
+        System.out.println(unDo+"-------------------");
+        System.out.println("-------------------");
+        if (unDo!=0){
+            request.setAttribute("unDo","系统当前有未处理的缴费/报修/投诉 记录，请及时处理！");
+        }
+        System.out.println(login.toString());
         //int totalCount = service.findTotalCount();
         String currentPage =request.getParameter("currentPage");
         System.out.println(currentPage);
@@ -42,7 +55,7 @@ public class findUserByPageServlet extends HttpServlet {
             currentPage="1";
         }
         //int currentPage = Integer.parseInt(request.getParameter("currentPage"));
-        int row = 10;//限制每页5条记录
+        int row = 6;//限制每页5条记录
         //condition= (Map<String, String[]>) request.getSession().getAttribute("condition");
         PageBean<User> pageBean = service.findUserByPage(Integer.parseInt(currentPage), row,condition);
         System.out.println(pageBean);

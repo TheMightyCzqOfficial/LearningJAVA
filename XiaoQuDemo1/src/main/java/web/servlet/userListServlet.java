@@ -16,6 +16,7 @@ public class userListServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserService service=new UserServiceImpl();
         List<User> users = service.findAll();
+//        if (!login.toString().equals(""))
         //转发到页面
         request.setAttribute("users",users);
         request.getRequestDispatcher("/list.jsp").forward(request,response);

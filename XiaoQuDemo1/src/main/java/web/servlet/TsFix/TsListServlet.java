@@ -1,11 +1,8 @@
 package web.servlet.TsFix;
 
 import domain.Fix;
-import domain.House;
 import domain.Ts;
-import service.HouseService;
 import service.TFDaoService;
-import service.impl.HouseServiceImpl;
 import service.impl.TFDaoServiceImpl;
 
 import javax.servlet.*;

@@ -5,10 +5,8 @@ import domain.Record;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
 import util.JDBCUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -47,7 +45,7 @@ public class RecordDaoImpl implements RecordDao {
 
     @Override
     public List findUserNameAndId() {
-        String sql="select id,name from user";
+        String sql="select id,name,username from user";
         List<Map<String, Object>> maps = template.queryForList(sql);
 
         return maps;
@@ -55,10 +53,9 @@ public class RecordDaoImpl implements RecordDao {
 
     @Override
     public String findNameById(int id) {
-        String sql="select name from user where user.id=?";
+        String sql="select username from user where user.id=?";
         Map<String, Object> map = template.queryForMap(sql, id);
-        String name = map.get("name").toString();
-        return name;
+        return map.get("username").toString();
     }
 
     @Override

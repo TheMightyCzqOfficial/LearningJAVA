@@ -26,5 +26,10 @@ public interface UserService {
     public List<User> findByPage(int start,int row,Map<String, String[]> condition);
     public PageBean<User> findUserByPage(int currentPage, int row, Map<String, String[]> condition);
     public List<Login> findRegister(String username);
+    public List<String> findLogin();
+    public void updatePwd(String username,String pwd);
+    public String findActivateUser(String username);
+    public List findUsername();
+    public int  findUnDo();
 
 }

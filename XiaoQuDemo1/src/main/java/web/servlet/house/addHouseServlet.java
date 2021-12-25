@@ -1,12 +1,9 @@
 package web.servlet.house;
 
 import domain.House;
-import domain.User;
 import org.apache.commons.beanutils.BeanUtils;
 import service.HouseService;
-import service.UserService;
 import service.impl.HouseServiceImpl;
-import service.impl.UserServiceImpl;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
